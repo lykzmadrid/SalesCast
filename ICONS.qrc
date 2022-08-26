@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="ARROW">
+    <file>RESOURCE/next.png</file>
+  </qresource>
+</RCC>
