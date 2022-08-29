@@ -1,5 +1,17 @@
 <RCC>
   <qresource prefix="ARROW">
+    <file>RESOURCE/clear white.png</file>
+    <file>RESOURCE/P.png</file>
     <file>RESOURCE/next.png</file>
+    <file>RESOURCE/attach.png</file>
+    <file>RESOURCE/clear.png</file>
+    <file>RESOURCE/delete.png</file>
+    <file>RESOURCE/edit.png</file>
+    <file>RESOURCE/filter.png</file>
+    <file>RESOURCE/maximize.png</file>
+    <file>RESOURCE/print.png</file>
+    <file>RESOURCE/remove.png</file>
+    <file>RESOURCE/search.png</file>
+    <file>RESOURCE/user.png</file>
   </qresource>
 </RCC>
