@@ -1,0 +1,1958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1242</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1242</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1242</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Dialog{
+background-color: rgb(15, 16, 43);
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1242</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame{
+background-color: rgb(8, 8, 25);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Arial Rounded MT Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 28px;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>SalesCast</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>30</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 21px;
+color: #FFFFFF;
+</string>
+    </property>
+    <property name="text">
+     <string>USER</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>31</y>
+      <width>17</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>17</width>
+      <height>17</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/ARROW/RESOURCE/user.png);
+background-color: rgba(255, 255, 255, 0);
+min-width: 15px;
+min-height: 15px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="ICONS.qrc">
+      <normaloff>:/ARROW/RESOURCE/user.png</normaloff>:/ARROW/RESOURCE/user.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>1242</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame_2{
+position: absolute;
+width: 1242px;
+height: 54.34px;
+left: 0px;
+top: 59.83px;
+background-color: rgb(32, 33, 61);
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1241</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1241</width>
+      <height>741</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1241</width>
+      <height>741</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget #tab_5 {
+	background-color: rgb(15, 16, 43);
+}
+QTabWidget #tab_6 {
+	background-color: rgb(15, 16, 43);
+}
+QTabWidget #tab_7 {
+	background-color: rgb(15, 16, 43);
+}
+QTabWidget #tab_8 {
+	background-color: rgb(15, 16, 43);
+}
+QTabWidget::pane {
+  top:-1px; 
+background-color: rgba(255, 255, 255, 0);; 
+} 
+
+QTabBar::tab {
+min-width: 110px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+text-transform: uppercase;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0);; 
+  padding: 20px;
+} 
+
+QTabBar::tab:selected { 
+border-bottom: 2px solid rgb(43, 179, 221);
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+text-transform: uppercase;
+color: #2BB3DD;
+background-color: rgba(255, 255, 255, 0);; 
+ margin-bottom: -1px; 
+}
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Products</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>157</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 157px;
+height: 34px;
+left: 52px;
+top: calc(50% - 34px/2 - 228px);
+
+background: #F44336;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>+ ADD PRODUCT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>318</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #080819;
+border-radius: 10px;
+
+padding-left:30px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>SEARCH FOR PRODUCT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/ARROW/RESOURCE/search.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>40</y>
+        <width>115</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background-color: rgb(67, 68, 89);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>DELETE</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/delete.png</normaloff>:/ARROW/RESOURCE/delete.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>40</y>
+        <width>92</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background-color: rgb(67, 68, 89);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>EDIT</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/edit.png</normaloff>:/ARROW/RESOURCE/edit.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>1161</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QHeaderView::section {
+    background-color: #646464;
+    padding: 4px;
+    font-size: 14pt;
+    border-style: none;
+    border-bottom: 1px solid #fffff8;
+    border-right: 1px solid #fffff8;
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid #fffff8;
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid #fffff8;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>1170</x>
+        <y>630</y>
+        <width>29</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>99</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1160.29px;
+top: 729px;
+
+background: #20213D;
+border-radius: 3.45238px;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>630</y>
+        <width>29</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>99</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1160.29px;
+top: 729px;
+
+background: #20213D;
+border-radius: 3.45238px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>630</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+
+background: #2BB3DD;
+border-radius: 5.11765px;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>Categories</string>
+     </attribute>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>630</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+
+background: #2BB3DD;
+border-radius: 5.11765px;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>171</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 157px;
+height: 34px;
+left: 52px;
+top: calc(50% - 34px/2 - 228px);
+
+background: #F44336;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>+ ADD CATEGORY</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>40</y>
+        <width>115</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background-color: rgb(67, 68, 89);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>DELETE</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/delete.png</normaloff>:/ARROW/RESOURCE/delete.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>40</y>
+        <width>92</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background-color: rgb(67, 68, 89);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>EDIT</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/edit.png</normaloff>:/ARROW/RESOURCE/edit.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/ARROW/RESOURCE/search.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>1161</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QHeaderView::section {
+    background-color: #646464;
+    padding: 4px;
+    font-size: 14pt;
+    border-style: none;
+    border-bottom: 1px solid #fffff8;
+    border-right: 1px solid #fffff8;
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid #fffff8;
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid #fffff8;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>1170</x>
+        <y>630</y>
+        <width>29</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>99</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1160.29px;
+top: 729px;
+
+background: #20213D;
+border-radius: 3.45238px;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>40</y>
+        <width>318</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #080819;
+border-radius: 10px;
+
+padding-left:30px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>SEARCH FOR CATEGORY</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>630</y>
+        <width>29</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>99</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1160.29px;
+top: 729px;
+
+background: #20213D;
+border-radius: 3.45238px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/ARROW/RESOURCE/search.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Sales</string>
+     </attribute>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>630</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+
+background: #2BB3DD;
+border-radius: 5.11765px;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>157</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 157px;
+height: 34px;
+left: 52px;
+top: calc(50% - 34px/2 - 228px);
+
+background: #F44336;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>+ ADD SALES</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>40</y>
+        <width>115</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background-color: rgb(67, 68, 89);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>DELETE</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/delete.png</normaloff>:/ARROW/RESOURCE/delete.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>40</y>
+        <width>92</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background-color: rgb(67, 68, 89);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>EDIT</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/edit.png</normaloff>:/ARROW/RESOURCE/edit.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>1161</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QHeaderView::section {
+    background-color: #646464;
+    padding: 4px;
+    font-size: 14pt;
+    border-style: none;
+    border-bottom: 1px solid #fffff8;
+    border-right: 1px solid #fffff8;
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid #fffff8;
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid #fffff8;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_15">
+      <property name="geometry">
+       <rect>
+        <x>1170</x>
+        <y>630</y>
+        <width>29</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>99</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1160.29px;
+top: 729px;
+
+background: #20213D;
+border-radius: 3.45238px;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_16">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>630</y>
+        <width>29</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>99</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1160.29px;
+top: 729px;
+
+background: #20213D;
+border-radius: 3.45238px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_17">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>92</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background-color: rgb(67, 68, 89);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>SORT</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/filter.png</normaloff>:/ARROW/RESOURCE/filter.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>Forecasting</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_18">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>231</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+
+background: #2BB3DD;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>EDIT PRICING RULES</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/edit.png</normaloff>:/ARROW/RESOURCE/edit.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_19">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>590</y>
+        <width>100</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background: #F44336;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>PRINT</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/print.png</normaloff>:/ARROW/RESOURCE/print.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_20">
+      <property name="geometry">
+       <rect>
+        <x>911</x>
+        <y>590</y>
+        <width>171</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background: #777887;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>VIEW ACCURACY</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/maximize.png</normaloff>:/ARROW/RESOURCE/maximize.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>318</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #434459;
+border-radius: 9.32035px;
+
+padding-left:10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>CHOOSE FILE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>230</y>
+        <width>318</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #434459;
+border-radius: 9.32035px;
+
+padding-left:30px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>240</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+image: url(:/ARROW/RESOURCE/P.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>200</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>ENTER PRICE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_21">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>160</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>14</width>
+        <height>14</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/ARROW/RESOURCE/attach.png);
+background-color: rgba(255, 255, 255, 0);
+min-width: 12px;
+min-height: 12px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_8">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>310</y>
+        <width>318</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #434459;
+border-radius: 9.32035px;
+
+padding-left:10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>280</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>PREDICTION RANGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>360</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>PRODUCT NAME</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_9">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>390</y>
+        <width>318</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #434459;
+border-radius: 9.32035px;
+
+padding-left:10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>440</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>DATASET INTERVAL</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_10">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>470</y>
+        <width>318</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #434459;
+border-radius: 9.32035px;
+
+padding-left:10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_22">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>530</y>
+        <width>151</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+box-sizing: border-box;
+
+position: absolute;
+width: 131px;
+height: 34px;
+left: 52.1px;
+top: calc(50% - 34px/2 + 231px);
+
+border: 2px solid #434459;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>CLEAR</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/clear.png</normaloff>:/ARROW/RESOURCE/clear.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_23">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>530</y>
+        <width>150</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+box-sizing: border-box;
+
+position: absolute;
+width: 131px;
+height: 34px;
+left: 200.1px;
+top: calc(50% - 34px/2 + 231px);
+
+background: #F44336;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>RUN</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/clear white.png</normaloff>:/ARROW/RESOURCE/clear white.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>150</y>
+        <width>408</width>
+        <height>408</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #FFFFFF;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>150</y>
+        <width>408</width>
+        <height>408</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: #FFFFFF;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_24">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>590</y>
+        <width>261</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background: #777887;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>VIEW PRICE MODIFICATION</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/maximize.png</normaloff>:/ARROW/RESOURCE/maximize.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <zorder>lineEdit_6</zorder>
+     <zorder>pushButton_18</zorder>
+     <zorder>pushButton_19</zorder>
+     <zorder>pushButton_20</zorder>
+     <zorder>label_7</zorder>
+     <zorder>lineEdit_7</zorder>
+     <zorder>label_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>pushButton_21</zorder>
+     <zorder>lineEdit_8</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_11</zorder>
+     <zorder>lineEdit_9</zorder>
+     <zorder>label_12</zorder>
+     <zorder>lineEdit_10</zorder>
+     <zorder>pushButton_22</zorder>
+     <zorder>pushButton_23</zorder>
+     <zorder>frame_3</zorder>
+     <zorder>frame_4</zorder>
+     <zorder>pushButton_24</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ICONS.qrc"/>
+ </resources>
+ <connections/>
+</ui>
