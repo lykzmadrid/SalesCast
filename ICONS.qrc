@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="ARROW">
+    <file>RESOURCE/minus.png</file>
+    <file>RESOURCE/plus.png</file>
     <file>RESOURCE/clear white.png</file>
     <file>RESOURCE/P.png</file>
     <file>RESOURCE/next.png</file>
