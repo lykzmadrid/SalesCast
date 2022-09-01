@@ -71,8 +71,10 @@ class LoginScreen(QDialog):
         main = MainScreen()
         widget.addWidget(main)
         widget.setCurrentIndex(widget.currentIndex() + 1)
-
-
+    def gobackregister(self):
+        register = RegisterScreen()
+        widget.addWidget(register)
+        widget.setCurrentIndex(widget.currentIndex() + 1)
     def loginfunction(self):
         stringusername = self.usernameTextbox.text()
         stringpassword = self.passwordTextbox.text()
@@ -94,22 +96,45 @@ class LoginScreen(QDialog):
             newpass = str(result_pass[0])
             if stringpassword == newpass:
                 print("Successfully  logged in")
+                self.gotomain()
+
             else:
                 print("Invalid")
-
-    def gobackregister(self):
-        register = RegisterScreen()
-        widget.addWidget(register)
-        widget.setCurrentIndex(widget.currentIndex() + 1)
-
 class MainScreen(QDialog):
     def __init__(self):
         super(MainScreen, self).__init__()
+        loadUi("MAIN.ui", self)
+        self.addprodButton.clicked.connect(self.gotoaddproduct)
+
+    def gotoaddproduct(self):
+        widget2.show()
+
+
+
+  # def addprodfunction(self):
+
+
+
+
+class AddProductScreen(QDialog):
+
+    def __init__(self):
+        super(AddProductScreen, self).__init__()
+        loadUi("ADDPROD.ui", self)
+        self.clearButton.clicked.connect(self.clearfunction)
+
+    def clearfunction(self):
+        self.prodnameTB.clear()
+        self.sellpriceTB.clear()
+        self.quantityTB.clear()
 
 
 app = QApplication(sys.argv)
 welcome = WelcomeScreen()
 widget = QtWidgets.QStackedWidget()
 widget.addWidget(welcome)
+APS = AddProductScreen()
+widget2 = QtWidgets.QStackedWidget()
+widget2.addWidget(APS)
 widget.show()
 app.exec()

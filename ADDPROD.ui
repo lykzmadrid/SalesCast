@@ -53,7 +53,7 @@ color: #FFFFFF;</string>
     <string>PRODUCT CATEGORY</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
+  <widget class="QLineEdit" name="prodnameTB">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -165,7 +165,7 @@ color: #FFFFFF;</string>
     <string>QUANTITY</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_7">
+  <widget class="QLineEdit" name="quantityTB">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -306,7 +306,7 @@ color: #FFFFFF;</string>
     <string>SELLING PRICE</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_8">
+  <widget class="QLineEdit" name="sellpriceTB">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -498,7 +498,7 @@ border-radius: 10px;</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_24">
+  <widget class="QPushButton" name="clearButton">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -570,21 +570,21 @@ min-height: 10px;</string>
   </widget>
   <zorder>comboBox</zorder>
   <zorder>label_9</zorder>
-  <zorder>lineEdit_6</zorder>
+  <zorder>prodnameTB</zorder>
   <zorder>label_7</zorder>
   <zorder>label_8</zorder>
-  <zorder>lineEdit_7</zorder>
+  <zorder>quantityTB</zorder>
   <zorder>pushButton_21</zorder>
   <zorder>pushButton_22</zorder>
   <zorder>label_10</zorder>
   <zorder>label_11</zorder>
-  <zorder>lineEdit_8</zorder>
+  <zorder>sellpriceTB</zorder>
   <zorder>label_12</zorder>
   <zorder>comboBox_2</zorder>
   <zorder>lineEdit_9</zorder>
   <zorder>pushButton</zorder>
   <zorder>pushButton_23</zorder>
-  <zorder>pushButton_24</zorder>
+  <zorder>clearButton</zorder>
   <zorder>pushButton_2</zorder>
  </widget>
  <resources>
