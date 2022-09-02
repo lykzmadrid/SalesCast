@@ -2,7 +2,8 @@ import sys
 import mysql.connector
 from PyQt6.uic import loadUi
 from PyQt6 import QtWidgets
-from PyQt6.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QMainWindow
+from PyQt6.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QMainWindow, QFileDialog
+from PyQt6.QtGui import QPixmap
 
 
 class WelcomeScreen(QDialog):
@@ -122,11 +123,36 @@ class AddProductScreen(QDialog):
         super(AddProductScreen, self).__init__()
         loadUi("ADDPROD.ui", self)
         self.clearButton.clicked.connect(self.clearfunction)
+        self.confirmButton.clicked.connect(self.addprodfunction)
+        self.picButton.clicked.connect(self.addphotofunction)
 
     def clearfunction(self):
         self.prodnameTB.clear()
         self.sellpriceTB.clear()
         self.quantityTB.clear()
+
+    def addprodfunction(self):
+        strProdname = self.prodnameTB.text()
+        strSellprice = self.sellpriceTB.text()
+        strQuantity = self.quantityTB.text()
+
+        if len(strProdname) == 0 or len(strSellprice) == 0 or len(strQuantity) == 0:
+            print("Incomplete selection")
+        else:
+            print("test")
+
+    def addphotofunction(self):
+
+        pic = QFileDialog.getOpenFileName(self, 'Open File', 'c\\', 'Image files (*.jpg *.gif)')
+        imagepixmap = pic[0]
+        pixmap = QPixmap(imagepixmap)
+        if pixmap != None:
+            print("ok")
+        else:
+            print("pls pic")
+
+
+
 
 
 app = QApplication(sys.argv)
