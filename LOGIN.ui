@@ -63,9 +63,9 @@ background-color: rgb(15, 16, 43);
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>470</x>
+       <x>490</x>
        <y>140</y>
-       <width>321</width>
+       <width>261</width>
        <height>71</height>
       </rect>
      </property>
@@ -75,7 +75,7 @@ font: 75 40pt &quot;Arial Rounded MT Bold&quot;;
 color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>PriceCast</string>
+      <string>SalesCast</string>
      </property>
     </widget>
     <widget class="QFrame" name="frame">
@@ -134,6 +134,10 @@ background-color: rgb(255, 255, 255);
       </property>
       <property name="text">
        <string>SIGN IN</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ICONS.qrc">
+        <normaloff>:/ARROW/RESOURCE/next.png</normaloff>:/ARROW/RESOURCE/next.png</iconset>
       </property>
      </widget>
      <widget class="QLineEdit" name="usernameTextbox">
