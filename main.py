@@ -45,7 +45,7 @@ class RegisterScreen(QDialog):
             sqlcon = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                password="Amorsolo31",
+                password="4114077lykA.",
                 database="php_db"
             )
             cur = sqlcon.cursor()
