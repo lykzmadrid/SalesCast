@@ -771,6 +771,21 @@ border-radius: 10px;</string>
         <height>531</height>
        </rect>
       </property>
+         <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Category</string>
+    </property>
+   </column>
       <property name="styleSheet">
        <string notr="true">QHeaderView::section {
     background-color: #646464;

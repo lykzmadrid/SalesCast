@@ -108,9 +108,9 @@ class MainScreen(QDialog):
     def __init__(self):
         super(MainScreen, self).__init__()
         loadUi("MAIN.ui", self)
-     #   self.loadproductdata()
         self.addprodButton.clicked.connect(self.gotoaddproduct)
         self.addcategButton.clicked.connect(self.gotoaddcategory)
+        self.loadproductdata()
 
 
     def gotoaddproduct(self):
@@ -123,23 +123,35 @@ class MainScreen(QDialog):
         widget3.show()
     def loadproductdata(self):
         global companyid
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Amorsolo31",
-            database="php_db"
-        )
-        mycursor = mydb.cursor()
-        sql = "SELECT * FROM product_tabel WHERE company_id = %s"
-        strcomp = (companyid,)
+        try:
+            mydb = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="Amorsolo31",
+                database="php_db"
+            )
+            mycursor = mydb.cursor()
+            sql = "SELECT * FROM product_table WHERE company_id = %s"
+            strcomp = (companyid,)
+            mycursor.execute(sql, strcomp)
 
-        self.productTable.setRowCount(50)
-        tablerow = 0
-        for row in mycursor.execute(sql, strcomp):
-            self.tableWidget.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(row[0]))
-            tablerow+=1
-        mycursor.close()
-        mydb.close()
+            result = mycursor.fetchall()
+            self.productTable.setColumnWidth(0, 250)
+            self.productTable.setColumnWidth(1, 100)
+            self.productTable.setColumnWidth(2, 350)
+            self.productTable.setRowCount(len(result))
+            print(companyid, result)
+            tablerow = 0
+            for row in result:
+                print('row:',row)
+                self.productTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
+                self.productTable.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(row[1]))
+                self.productTable.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[2]))
+                tablerow += 1
+            mycursor.close()
+            mydb.close()
+        except Exception as e:
+            print(e)
 
 class AddProductScreen(QDialog):
 
@@ -196,6 +208,7 @@ class AddProductScreen(QDialog):
         self.prodcategCBox.addItems(CBContents)
         mydb.close()
         mycursor.close()
+
 
     def addphotofunction(self):
 
