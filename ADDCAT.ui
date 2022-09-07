@@ -53,7 +53,7 @@ color: #FFFFFF;</string>
     <string>CATEGOORY NAME</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="categoryTBx">
+  <widget class="QLineEdit" name="lineEdit_6">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -86,7 +86,7 @@ padding-left:10px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="addcategoryconfirmButton">
+  <widget class="QPushButton" name="pushButton_23">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -137,7 +137,7 @@ border-radius: 10px;</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="categclearButton">
+  <widget class="QPushButton" name="pushButton_24">
    <property name="geometry">
     <rect>
      <x>20</x>
