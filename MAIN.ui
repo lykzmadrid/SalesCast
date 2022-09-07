@@ -230,7 +230,7 @@ background-color: rgba(255, 255, 255, 0);;
 </string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <property name="documentMode">
      <bool>true</bool>
@@ -442,25 +442,198 @@ border-radius: 10px;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QHeaderView::section {
-    background-color: #646464;
+       <string notr="true">QTableWidget{
+background-color: #0F102B;
+}
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+
+    background-color: #0F102B;
     padding: 4px;
-    font-size: 14pt;
+    font-size: 8pt;
     border-style: none;
-    border-bottom: 1px solid #fffff8;
-    border-right: 1px solid #fffff8;
+    border-bottom: 1px solid #0F102B;
+    border-right: 1px solid #0F102B;
 }
 
 QHeaderView::section:horizontal
 {
-    border-top: 1px solid #fffff8;
+    border-top: 1px solid #0F102B;
+	border-bottom: 2px solid #26263F;
+;
 }
 
 QHeaderView::section:vertical
 {
-    border-left: 1px solid #fffff8;
+    border-left: 1px solid #0F102B;
+}
+QTableWidget {
+    gridline-color: #26263F;
+    font-size: 9pt;
 }</string>
       </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PHOTO</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>30</red>
+         <green>30</green>
+         <blue>30</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NAME</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>CATEGORY</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>STOCK</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRICE</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
      </widget>
      <widget class="QPushButton" name="pushButton_5">
       <property name="geometry">
@@ -611,12 +784,12 @@ border-radius: 5.11765px;</string>
        <string>1</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="addcategButton">
+     <widget class="QPushButton" name="pushButton_7">
       <property name="geometry">
        <rect>
         <x>40</x>
         <y>40</y>
-        <width>171</width>
+        <width>161</width>
         <height>34</height>
        </rect>
       </property>
@@ -749,7 +922,7 @@ border-radius: 10px;</string>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>230</x>
+        <x>220</x>
         <y>50</y>
         <width>16</width>
         <height>16</height>
@@ -760,51 +933,6 @@ border-radius: 10px;</string>
       </property>
       <property name="text">
        <string/>
-      </property>
-     </widget>
-     <widget class="QTableWidget" name="productTable">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>90</y>
-        <width>1161</width>
-        <height>531</height>
-       </rect>
-      </property>
-         <column>
-    <property name="text">
-     <string>ID</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Name</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Category</string>
-    </property>
-   </column>
-      <property name="styleSheet">
-       <string notr="true">QHeaderView::section {
-    background-color: #646464;
-    padding: 4px;
-    font-size: 14pt;
-    border-style: none;
-    border-bottom: 1px solid #fffff8;
-    border-right: 1px solid #fffff8;
-}
-
-QHeaderView::section:horizontal
-{
-    border-top: 1px solid #fffff8;
-}
-
-QHeaderView::section:vertical
-{
-    border-left: 1px solid #fffff8;
-}</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_10">
@@ -855,7 +983,7 @@ border-radius: 3.45238px;</string>
      <widget class="QLineEdit" name="lineEdit_4">
       <property name="geometry">
        <rect>
-        <x>230</x>
+        <x>220</x>
         <y>40</y>
         <width>318</width>
         <height>34</height>
@@ -933,7 +1061,7 @@ border-radius: 3.45238px;</string>
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>230</x>
         <y>50</y>
         <width>16</width>
         <height>16</height>
@@ -945,6 +1073,128 @@ border-radius: 3.45238px;</string>
       <property name="text">
        <string/>
       </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>1161</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget{
+background-color: #0F102B;
+}
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+
+    background-color: #0F102B;
+    padding: 4px;
+    font-size: 8pt;
+    border-style: none;
+    border-bottom: 1px solid #0F102B;
+    border-right: 1px solid #0F102B;
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid #0F102B;
+	border-bottom: 2px solid #26263F;
+;
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid #0F102B;
+}
+QTableWidget {
+    gridline-color: #26263F;
+    font-size: 9pt;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PHOTO</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>30</red>
+         <green>30</green>
+         <blue>30</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NAME</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_7">
@@ -1113,36 +1363,6 @@ border-radius: 10px;</string>
        </size>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_3">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>90</y>
-        <width>1161</width>
-        <height>531</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QHeaderView::section {
-    background-color: #646464;
-    padding: 4px;
-    font-size: 14pt;
-    border-style: none;
-    border-bottom: 1px solid #fffff8;
-    border-right: 1px solid #fffff8;
-}
-
-QHeaderView::section:horizontal
-{
-    border-top: 1px solid #fffff8;
-}
-
-QHeaderView::section:vertical
-{
-    border-left: 1px solid #fffff8;
-}</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton_15">
       <property name="geometry">
        <rect>
@@ -1281,6 +1501,236 @@ border-radius: 10px;</string>
        </size>
       </property>
      </widget>
+     <widget class="QTableWidget" name="tableWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>1161</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget{
+background-color: #0F102B;
+}
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+
+    background-color: #0F102B;
+    padding: 4px;
+    font-size: 8pt;
+    border-style: none;
+    border-bottom: 1px solid #0F102B;
+    border-right: 1px solid #0F102B;
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid #0F102B;
+	border-bottom: 2px solid #26263F;
+;
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid #0F102B;
+}
+QTableWidget {
+    gridline-color: #26263F;
+    font-size: 9pt;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PHOTO</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>30</red>
+         <green>30</green>
+         <blue>30</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NAME</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>CATEGORY</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>QUANTITY</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TOTAL</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SALES DATE</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>15</red>
+         <green>16</green>
+         <blue>43</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_8">
      <attribute name="title">
@@ -1289,9 +1739,9 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_18">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>40</y>
-        <width>231</width>
+        <x>880</x>
+        <y>140</y>
+        <width>321</width>
         <height>34</height>
        </rect>
       </property>
@@ -1333,7 +1783,7 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_19">
       <property name="geometry">
        <rect>
-        <x>1100</x>
+        <x>510</x>
         <y>590</y>
         <width>100</width>
         <height>34</height>
@@ -1381,7 +1831,7 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_20">
       <property name="geometry">
        <rect>
-        <x>911</x>
+        <x>321</x>
         <y>590</y>
         <width>171</width>
         <height>34</height>
@@ -1426,45 +1876,12 @@ border-radius: 10px;</string>
        </size>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>150</y>
-        <width>318</width>
-        <height>34</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-color: #777887;
-
-position: absolute;
-width: 318px;
-height: 34px;
-
-background: #434459;
-border-radius: 9.32035px;
-
-padding-left:10px;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="placeholderText">
-       <string/>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>120</y>
-        <width>101</width>
+        <y>40</y>
+        <width>211</width>
         <height>16</height>
        </rect>
       </property>
@@ -1476,17 +1893,17 @@ font-size: 10.1515px;
 line-height: 12px;
 text-transform: uppercase;
 
-color: #FFFFFF;</string>
+color: #777887;</string>
       </property>
       <property name="text">
-       <string>CHOOSE FILE</string>
+       <string>ADVANCED PRODUCT SEARCH</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_7">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>230</y>
+        <x>880</x>
+        <y>220</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -1518,8 +1935,8 @@ padding-left:30px;</string>
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>240</y>
+        <x>890</x>
+        <y>310</y>
         <width>16</width>
         <height>16</height>
        </rect>
@@ -1535,9 +1952,9 @@ image: url(:/ARROW/RESOURCE/P.png);</string>
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>200</y>
-        <width>101</width>
+        <x>880</x>
+        <y>190</y>
+        <width>141</width>
         <height>16</height>
        </rect>
       </property>
@@ -1552,45 +1969,14 @@ text-transform: uppercase;
 color: #FFFFFF;</string>
       </property>
       <property name="text">
-       <string>ENTER PRICE</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_21">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>160</y>
-        <width>21</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>14</width>
-        <height>14</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">image: url(:/ARROW/RESOURCE/attach.png);
-background-color: rgba(255, 255, 255, 0);
-min-width: 12px;
-min-height: 12px;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>12</width>
-        <height>12</height>
-       </size>
+       <string>SELECTED PRODUCT</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_8">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>310</y>
+        <x>880</x>
+        <y>300</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -1622,8 +2008,31 @@ padding-left:10px;</string>
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>280</y>
+        <x>880</x>
+        <y>270</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;</string>
+      </property>
+      <property name="text">
+       <string>BASE PRICE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>350</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -1642,34 +2051,11 @@ color: #FFFFFF;</string>
        <string>PREDICTION RANGE</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>360</y>
-        <width>141</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 10.1515px;
-line-height: 12px;
-text-transform: uppercase;
-
-color: #FFFFFF;</string>
-      </property>
-      <property name="text">
-       <string>PRODUCT NAME</string>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="lineEdit_9">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>390</y>
+        <x>880</x>
+        <y>380</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -1701,8 +2087,8 @@ padding-left:10px;</string>
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>440</y>
+        <x>880</x>
+        <y>430</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -1724,8 +2110,8 @@ color: #FFFFFF;</string>
      <widget class="QLineEdit" name="lineEdit_10">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>470</y>
+        <x>880</x>
+        <y>460</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -1757,8 +2143,8 @@ padding-left:10px;</string>
      <widget class="QPushButton" name="pushButton_22">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>530</y>
+        <x>880</x>
+        <y>520</y>
         <width>151</width>
         <height>34</height>
        </rect>
@@ -1808,8 +2194,8 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_23">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>530</y>
+        <x>1050</x>
+        <y>520</y>
         <width>150</width>
         <height>34</height>
        </rect>
@@ -1859,8 +2245,8 @@ border-radius: 10px;</string>
      <widget class="QFrame" name="frame_3">
       <property name="geometry">
        <rect>
-        <x>370</x>
-        <y>150</y>
+        <x>40</x>
+        <y>140</y>
         <width>408</width>
         <height>408</height>
        </rect>
@@ -1878,8 +2264,8 @@ border-radius: 10px;</string>
      <widget class="QFrame" name="frame_4">
       <property name="geometry">
        <rect>
-        <x>790</x>
-        <y>150</y>
+        <x>460</x>
+        <y>140</y>
         <width>408</width>
         <height>408</height>
        </rect>
@@ -1897,7 +2283,7 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_24">
       <property name="geometry">
        <rect>
-        <x>630</x>
+        <x>40</x>
         <y>590</y>
         <width>261</width>
         <height>34</height>
@@ -1942,7 +2328,276 @@ border-radius: 10px;</string>
        </size>
       </property>
      </widget>
-     <zorder>lineEdit_6</zorder>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+image: url(:/ARROW/RESOURCE/search.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_11">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>411</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+
+text-transform: uppercase;
+
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #20213D;
+border-radius: 10px;
+
+padding-left:30px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>ENTER RECORD</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>60</y>
+        <width>279</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+
+text-transform: uppercase;
+
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #20213D;
+border-radius: 10px;
+
+padding-left:30px;</string>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>40</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #777887;</string>
+      </property>
+      <property name="text">
+       <string>CATEGORY</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>40</y>
+        <width>12</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/ARROW/RESOURCE/filter1.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>40</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #777887;</string>
+      </property>
+      <property name="text">
+       <string>SELECT PRODUCT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>40</y>
+        <width>13</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>13</width>
+        <height>13</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>13</width>
+        <height>13</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/ARROW/RESOURCE/product.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>60</y>
+        <width>401</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+
+text-transform: uppercase;
+
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #434459;
+border-radius: 10px;
+
+padding-left:30px;</string>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_21">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>60</y>
+        <width>98</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #D9D9D9;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 1074px;
+top: calc(50% - 34px/2 - 228px);
+background: #434459;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>SEARCH</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>12</width>
+        <height>12</height>
+       </size>
+      </property>
+     </widget>
+     <zorder>lineEdit_11</zorder>
+     <zorder>lineEdit_8</zorder>
      <zorder>pushButton_18</zorder>
      <zorder>pushButton_19</zorder>
      <zorder>pushButton_20</zorder>
@@ -1950,8 +2605,6 @@ border-radius: 10px;</string>
      <zorder>lineEdit_7</zorder>
      <zorder>label_8</zorder>
      <zorder>label_9</zorder>
-     <zorder>pushButton_21</zorder>
-     <zorder>lineEdit_8</zorder>
      <zorder>label_10</zorder>
      <zorder>label_11</zorder>
      <zorder>lineEdit_9</zorder>
@@ -1962,6 +2615,14 @@ border-radius: 10px;</string>
      <zorder>frame_3</zorder>
      <zorder>frame_4</zorder>
      <zorder>pushButton_24</zorder>
+     <zorder>label_13</zorder>
+     <zorder>comboBox</zorder>
+     <zorder>label_14</zorder>
+     <zorder>label_15</zorder>
+     <zorder>label_16</zorder>
+     <zorder>label_17</zorder>
+     <zorder>comboBox_2</zorder>
+     <zorder>pushButton_21</zorder>
     </widget>
    </widget>
   </widget>

@@ -109,7 +109,7 @@ color: #FFFFFF;</string>
     <string>PRODUCT NAME</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="prodcategCBox">
+  <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -264,7 +264,7 @@ min-height: 17px;</string>
    <property name="geometry">
     <rect>
      <x>450</x>
-     <y>160</y>
+     <y>260</y>
      <width>121</width>
      <height>16</height>
     </rect>
@@ -339,11 +339,67 @@ padding-left:30px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_9">
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>160</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10.1515px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;</string>
+   </property>
+   <property name="text">
+    <string>DEMAND LEVEL</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
    <property name="geometry">
     <rect>
      <x>450</x>
      <y>180</y>
+     <width>328</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #777887;
+
+position: absolute;
+width: 318px;
+height: 34px;
+
+background: #434459;
+border-radius: 9.32035px;
+
+padding-left:30px;</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_9">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>280</y>
      <width>328</width>
      <height>46</height>
     </rect>
@@ -376,7 +432,7 @@ padding-left:10px;</string>
    <property name="geometry">
     <rect>
      <x>750</x>
-     <y>190</y>
+     <y>290</y>
      <width>21</width>
      <height>31</height>
     </rect>
@@ -512,83 +568,7 @@ min-height: 10px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="picButton_2">
-   <property name="geometry">
-    <rect>
-     <x>750</x>
-     <y>290</y>
-     <width>21</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">image: url(:/ARROW/RESOURCE/attach.png);
-background-color: rgba(255, 255, 255, 0);
-min-width: 10px;
-min-height: 10px;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_10">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>280</y>
-     <width>328</width>
-     <height>46</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-color: #777887;
-
-position: absolute;
-width: 318px;
-height: 34px;
-
-background: #434459;
-border-radius: 9.32035px;
-
-padding-left:10px;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="placeholderText">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>260</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 10.1515px;
-line-height: 12px;
-text-transform: uppercase;
-
-color: #FFFFFF;</string>
-   </property>
-   <property name="text">
-    <string>ATTACH DATASET</string>
-   </property>
-  </widget>
-  <zorder>lineEdit_10</zorder>
-  <zorder>prodcategCBox</zorder>
+  <zorder>comboBox</zorder>
   <zorder>label_9</zorder>
   <zorder>prodnameTB</zorder>
   <zorder>label_7</zorder>
@@ -599,13 +579,13 @@ color: #FFFFFF;</string>
   <zorder>label_10</zorder>
   <zorder>label_11</zorder>
   <zorder>sellpriceTB</zorder>
+  <zorder>label_12</zorder>
+  <zorder>comboBox_2</zorder>
   <zorder>lineEdit_9</zorder>
   <zorder>picButton</zorder>
   <zorder>confirmButton</zorder>
   <zorder>clearButton</zorder>
   <zorder>pushButton_2</zorder>
-  <zorder>picButton_2</zorder>
-  <zorder>label_12</zorder>
  </widget>
  <resources>
   <include location="ICONS.qrc"/>
