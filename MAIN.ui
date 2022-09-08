@@ -1740,7 +1740,7 @@ QTableWidget {
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>140</y>
+        <y>520</y>
         <width>321</width>
         <height>34</height>
        </rect>
@@ -1767,7 +1767,7 @@ background: #2BB3DD;
 border-radius: 10px;</string>
       </property>
       <property name="text">
-       <string>EDIT PRICING RULES</string>
+       <string>RUN DYNAMIC PRICING</string>
       </property>
       <property name="icon">
        <iconset resource="ICONS.qrc">
@@ -1783,7 +1783,7 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_19">
       <property name="geometry">
        <rect>
-        <x>510</x>
+        <x>230</x>
         <y>590</y>
         <width>100</width>
         <height>34</height>
@@ -1831,7 +1831,7 @@ border-radius: 10px;</string>
      <widget class="QPushButton" name="pushButton_20">
       <property name="geometry">
        <rect>
-        <x>321</x>
+        <x>41</x>
         <y>590</y>
         <width>171</width>
         <height>34</height>
@@ -1903,7 +1903,7 @@ color: #777887;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>220</y>
+        <y>170</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -1936,7 +1936,7 @@ padding-left:30px;</string>
       <property name="geometry">
        <rect>
         <x>890</x>
-        <y>310</y>
+        <y>260</y>
         <width>16</width>
         <height>16</height>
        </rect>
@@ -1953,7 +1953,7 @@ image: url(:/ARROW/RESOURCE/P.png);</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>190</y>
+        <y>140</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -1976,7 +1976,7 @@ color: #FFFFFF;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>300</y>
+        <y>250</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -2009,7 +2009,7 @@ padding-left:10px;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>270</y>
+        <y>220</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -2032,7 +2032,7 @@ color: #FFFFFF;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>350</y>
+        <y>300</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -2055,7 +2055,7 @@ color: #FFFFFF;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>380</y>
+        <y>330</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -2088,7 +2088,7 @@ padding-left:10px;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>430</y>
+        <y>380</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -2111,7 +2111,7 @@ color: #FFFFFF;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>460</y>
+        <y>410</y>
         <width>318</width>
         <height>34</height>
        </rect>
@@ -2144,7 +2144,7 @@ padding-left:10px;</string>
       <property name="geometry">
        <rect>
         <x>880</x>
-        <y>520</y>
+        <y>470</y>
         <width>151</width>
         <height>34</height>
        </rect>
@@ -2195,7 +2195,7 @@ border-radius: 10px;</string>
       <property name="geometry">
        <rect>
         <x>1050</x>
-        <y>520</y>
+        <y>470</y>
         <width>150</width>
         <height>34</height>
        </rect>
@@ -2278,54 +2278,6 @@ border-radius: 10px;</string>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_24">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>590</y>
-        <width>261</width>
-        <height>34</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Montserrat</family>
-        <pointsize>-1</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 15px;
-line-height: 18px;
-
-color: #FFFFFF;
-position: absolute;
-width: 115px;
-height: 34px;
-left: 1074px;
-top: calc(50% - 34px/2 - 228px);
-background: #777887;
-border-radius: 10px;</string>
-      </property>
-      <property name="text">
-       <string>VIEW PRICE MODIFICATION</string>
-      </property>
-      <property name="icon">
-       <iconset resource="ICONS.qrc">
-        <normaloff>:/ARROW/RESOURCE/maximize.png</normaloff>:/ARROW/RESOURCE/maximize.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>12</width>
-        <height>12</height>
-       </size>
       </property>
      </widget>
      <widget class="QLabel" name="label_13">
@@ -2614,7 +2566,6 @@ border-radius: 10px;</string>
      <zorder>pushButton_23</zorder>
      <zorder>frame_3</zorder>
      <zorder>frame_4</zorder>
-     <zorder>pushButton_24</zorder>
      <zorder>label_13</zorder>
      <zorder>comboBox</zorder>
      <zorder>label_14</zorder>
