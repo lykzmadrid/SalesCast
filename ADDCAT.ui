@@ -53,7 +53,7 @@ color: #FFFFFF;</string>
     <string>CATEGOORY NAME</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
+  <widget class="QLineEdit" name="categTB">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -86,7 +86,7 @@ padding-left:10px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_23">
+  <widget class="QPushButton" name="addcatconfirm">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -99,7 +99,6 @@ padding-left:10px;</string>
     <font>
      <family>Montserrat</family>
      <pointsize>-1</pointsize>
-     <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>
@@ -150,7 +149,6 @@ border-radius: 10px;</string>
     <font>
      <family>Montserrat</family>
      <pointsize>-1</pointsize>
-     <weight>75</weight>
      <italic>false</italic>
      <bold>true</bold>
     </font>

@@ -230,7 +230,7 @@ background-color: rgba(255, 255, 255, 0);;
 </string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <property name="documentMode">
      <bool>true</bool>
@@ -261,7 +261,6 @@ background-color: rgba(255, 255, 255, 0);;
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -349,7 +348,6 @@ padding-left:30px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -397,7 +395,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -432,7 +429,7 @@ border-radius: 10px;</string>
        </size>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget">
+     <widget class="QTableWidget" name="ProductTable">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -472,6 +469,18 @@ QTableWidget {
     font-size: 9pt;
 }</string>
       </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
       <column>
        <property name="text">
         <string>ID</string>
@@ -648,7 +657,6 @@ QTableWidget {
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>99</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -693,7 +701,6 @@ border-radius: 3.45238px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>99</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -784,7 +791,7 @@ border-radius: 5.11765px;</string>
        <string>1</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_7">
+     <widget class="QPushButton" name="acsButton">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -797,7 +804,6 @@ border-radius: 5.11765px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -836,7 +842,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -884,7 +889,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -948,7 +952,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>99</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1026,7 +1029,6 @@ padding-left:30px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>99</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1074,7 +1076,7 @@ border-radius: 3.45238px;</string>
        <string/>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_3">
+     <widget class="QTableWidget" name="categTable">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -1113,6 +1115,9 @@ QTableWidget {
     gridline-color: #26263F;
     font-size: 9pt;
 }</string>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
       </property>
       <column>
        <property name="text">
@@ -1241,7 +1246,6 @@ border-radius: 5.11765px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1280,7 +1284,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1328,7 +1331,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1376,7 +1378,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>99</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1421,7 +1422,6 @@ border-radius: 3.45238px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>99</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1466,7 +1466,6 @@ border-radius: 3.45238px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1501,7 +1500,7 @@ border-radius: 10px;</string>
        </size>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_4">
+     <widget class="QTableWidget" name="salesTable">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -1749,7 +1748,6 @@ QTableWidget {
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1793,7 +1791,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -1841,7 +1838,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -2153,7 +2149,6 @@ padding-left:10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -2204,7 +2199,6 @@ border-radius: 10px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
@@ -2514,7 +2508,6 @@ padding-left:30px;</string>
        <font>
         <family>Montserrat</family>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
