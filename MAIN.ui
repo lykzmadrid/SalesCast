@@ -230,7 +230,7 @@ background-color: rgba(255, 255, 255, 0);;
 </string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="documentMode">
      <bool>true</bool>
@@ -757,6 +757,19 @@ border-radius: 5.11765px;</string>
       </property>
       <property name="placeholderText">
        <string>1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imglabel">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>660</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
       </property>
      </widget>
     </widget>

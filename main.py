@@ -2,8 +2,8 @@ import sys
 import mysql.connector
 
 from PyQt5.uic import loadUi
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QMainWindow, QFileDialog
+from PyQt5 import QtWidgets, QtGui
+from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QMainWindow, QFileDialog, QLabel
 from PyQt5.QtGui import QPixmap
 
 global companyid
@@ -48,7 +48,7 @@ class RegisterScreen(QDialog):
             sqlcon = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                password="4114077lykA.",
+                password="Amorsolo31",
                 database="php_db"
             )
             cur = sqlcon.cursor()
@@ -129,29 +129,50 @@ class MainScreen(QDialog):
         widget3.show()
 
     def loadproductstable(self):
-        global companyid
-        print(companyid)
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Amorsolo31",
-            database="php_db"
-        )
-        cur = mydb.cursor()
-        sql = "SELECT product_id, product_photo, product_name, category, stock, price FROM product_table WHERE company_id = %s"
-        strci = (companyid,)
-        cur.execute(sql, strci)
-        rows = cur.fetchall()
-        tablerow=0
-        self.ProductTable.setRowCount(len(rows))
-        for row in rows:
-            self.ProductTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
-            self.ProductTable.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(row[1]))
-            self.ProductTable.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[2]))
-            self.ProductTable.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(row[3]))
-            self.ProductTable.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(str(row[4])))
-            self.ProductTable.setItem(tablerow, 5, QtWidgets.QTableWidgetItem(str(row[5])))
-            tablerow+=1
+        try:
+            global companyid
+            print(companyid)
+            mydb = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="Amorsolo31",
+                database="php_db"
+            )
+            cur = mydb.cursor()
+            sql = "SELECT product_id, product_photo, product_name, category, stock, price FROM product_table WHERE company_id = %s"
+            strci = (companyid,)
+            cur.execute(sql, strci)
+            rows = cur.fetchall()
+            tablerow=0
+            self.ProductTable.setRowCount(len(rows))
+
+            for row in rows:
+                if row[1] == None:
+                    self.ProductTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
+                    self.ProductTable.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(row[1]))
+                    self.ProductTable.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[2]))
+                    self.ProductTable.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(row[3]))
+                    self.ProductTable.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(str(row[4])))
+                    self.ProductTable.setItem(tablerow, 5, QtWidgets.QTableWidgetItem(str(row[5])))
+                else:
+                    self.ProductTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
+                    image = row[1]
+                    pixmap = QtGui.QPixmap()
+                    pixmap.loadFromData(image, 'jpg')
+                    label = QLabel()
+                    label.setScaledContents(True)
+                    label.setPixmap(pixmap)
+                    self.ProductTable.setCellWidget(tablerow, 1, label)
+                    self.ProductTable.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[2]))
+                    self.ProductTable.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(row[3]))
+                    self.ProductTable.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(str(row[4])))
+                    self.ProductTable.setItem(tablerow, 5, QtWidgets.QTableWidgetItem(str(row[5])))
+                tablerow+=1
+        except Exception as e:
+            print(e)
+
+
+
     def loadcategtable(self):
         global companyid
         print(companyid)
@@ -187,18 +208,32 @@ class MainScreen(QDialog):
         cur.execute(sql, strci)
         rows = cur.fetchall()
         tablerow=0
-        print(rows)
         self.salesTable.setRowCount(len(rows))
         for row in rows:
-            self.salesTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
-            self.salesTable.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(row[1]))
-            self.salesTable.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[2]))
-            self.salesTable.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(row[3]))
-            self.salesTable.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(str(row[4])))
-            self.salesTable.setItem(tablerow, 5, QtWidgets.QTableWidgetItem(str(row[5])))
-            self.salesTable.setItem(tablerow, 6, QtWidgets.QTableWidgetItem(str(row[6])))
-            tablerow+=1
-
+            if row[1] == None:
+                self.salesTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
+                self.salesTable.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(row[1]))
+                self.salesTable.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[2]))
+                self.salesTable.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(row[3]))
+                self.salesTable.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(str(row[4])))
+                self.salesTable.setItem(tablerow, 5, QtWidgets.QTableWidgetItem(str(row[5])))
+                self.salesTable.setItem(tablerow, 6, QtWidgets.QTableWidgetItem(str(row[6])))
+                tablerow+=1
+            else:
+                self.salesTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
+                image = row[1]
+                pixmap2 = QtGui.QPixmap()
+                pixmap2.loadFromData(image, 'png')
+                label2 = QLabel()
+                label2.setScaledContents(True)
+                label2.setPixmap(pixmap2)
+                self.salesTable.setCellWidget(tablerow, 1, label2)
+                self.salesTable.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[2]))
+                self.salesTable.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(row[3]))
+                self.salesTable.setItem(tablerow, 4, QtWidgets.QTableWidgetItem(str(row[4])))
+                self.salesTable.setItem(tablerow, 5, QtWidgets.QTableWidgetItem(str(row[5])))
+                self.salesTable.setItem(tablerow, 6, QtWidgets.QTableWidgetItem(str(row[6])))
+                tablerow += 1
 class AddCategoryScreen(QDialog):
     def __init__(self):
         super(AddCategoryScreen, self).__init__()
@@ -234,6 +269,18 @@ class AddProductScreen(QDialog):
         self.confirmButton.clicked.connect(self.addprodfunction)
         self.picButton.clicked.connect(self.addphotofunction)
 
+    def addphotofunction(self):
+
+            pic = QFileDialog.getOpenFileName(self, 'Open File', 'c\\', 'Image files (*.jpg *.png)')
+            imagepixmap = pic[0]
+            pixmap = QPixmap(imagepixmap)
+            global binarydata
+            with open(imagepixmap, 'rb') as file:
+                binarydata = file.read()
+            if pixmap != None:
+                print("ok")
+            else:
+                print("pls pic")
     def clearfunction(self):
         self.prodnameTB.clear()
         self.sellpriceTB.clear()
@@ -241,7 +288,7 @@ class AddProductScreen(QDialog):
 
     def addprodfunction(self):
         try:
-            global companyid
+            global companyid, binarydata
             strProdname = self.prodnameTB.text()
             strSellprice = self.sellpriceTB.text()
             strQuantity = self.quantityTB.text()
@@ -257,22 +304,12 @@ class AddProductScreen(QDialog):
                     database="php_db"
                 )
                 cur = sqlcon.cursor()
-                cur.execute('INSERT INTO product_table(product_name, category, stock, price, company_id) VALUES (%s, %s, %s, %s, %s)', (strProdname, strCategory, strQuantity, strSellprice, companyid))
+                cur.execute('INSERT INTO product_table(product_name, category, stock, price, product_photo, company_id) VALUES (%s, %s, %s, %s, %s, %s)', (strProdname, strCategory, strQuantity, strSellprice, binarydata, companyid))
                 sqlcon.commit()
                 sqlcon.close()
         except Exception as e:
             print(e)
-    def addphotofunction(self):
 
-        pic = QFileDialog.getOpenFileName(self, 'Open File', 'c\\', 'Image files (*.jpg *.png)')
-
-        imagepixmap = pic[0]
-        pixmap = QPixmap(imagepixmap)
-        print(pic)
-        if pixmap != None:
-            print("ok")
-        else:
-            print("pls pic")
     def loadcategory(self):
         try:
             global companyid
