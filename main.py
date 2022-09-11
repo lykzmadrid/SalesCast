@@ -1,6 +1,6 @@
 import sys
 import mysql.connector
-
+import RESOURCE
 from PyQt5.uic import loadUi
 from PyQt5 import QtWidgets, QtGui
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QMainWindow, QFileDialog, QLabel
@@ -223,7 +223,7 @@ class MainScreen(QDialog):
                 self.salesTable.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(row[0])))
                 image = row[1]
                 pixmap2 = QtGui.QPixmap()
-                pixmap2.loadFromData(image, 'png')
+                pixmap2.loadFromData(image, 'jpg')
                 label2 = QLabel()
                 label2.setScaledContents(True)
                 label2.setPixmap(pixmap2)
@@ -271,12 +271,13 @@ class AddProductScreen(QDialog):
 
     def addphotofunction(self):
 
-            pic = QFileDialog.getOpenFileName(self, 'Open File', 'c\\', 'Image files (*.jpg *.png)')
+            pic = QFileDialog.getOpenFileName(self, 'Open File', 'c\\', 'Image files (*.jpg)')
             imagepixmap = pic[0]
             pixmap = QPixmap(imagepixmap)
             global binarydata
             with open(imagepixmap, 'rb') as file:
                 binarydata = file.read()
+
             if pixmap != None:
                 print("ok")
             else:
@@ -309,6 +310,7 @@ class AddProductScreen(QDialog):
                 sqlcon.close()
         except Exception as e:
             print(e)
+
 
     def loadcategory(self):
         try:
